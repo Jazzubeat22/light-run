@@ -1,10 +1,11 @@
 [tool]
 id = "com.thelightphone.app"
-label = "Light SDK Tool"
+label = "Run"
 versionCode = 1
 versionName = "1.0.0"
-permissions = ["android.permission.INTERNET"]
+permissions = ["android.permission.INTERNET", "android.permission.ACCESS_FINE_LOCATION"]
 capabilities = []
-# for the LightOS emulator, use the line below and build with -DlightSdk.allowAltServerPackage=true
-# serverPackage = "com.thelightphone.sdk.emulator"
-serverPackage = "com.lightos"
+# While testing on the LightOS emulator, use the emulator line.
+# Switch back to com.lightos before using a real Light Phone.
+serverPackage = "com.thelightphone.sdk.emulator"
+# serverPackage = "com.lightos"
